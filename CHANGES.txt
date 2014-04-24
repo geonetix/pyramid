@@ -14,6 +14,10 @@ Next release
 - ``pyramid.wsgi.wsgiapp`` and ``pyramid.wsgi.wsgiapp2`` now raise
   ``ValueError`` when accidentally passed ``None``.
 
+- Fix ``pyramid.testing.setUp`` to return a ``Configurator`` with a proper
+  package. Previously it was not possible to do package-relative includes
+  using the returned ``Configurator``.
+
 1.5 (2014-04-08)
 ================
 
